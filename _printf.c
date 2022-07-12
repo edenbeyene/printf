@@ -1,6 +1,5 @@
 #include "main.h"
 
-
 /**
  * _printf - formatted output conversion and print data.
  * @format: input string.
@@ -32,7 +31,7 @@ int _printf(const char *format, ...)
 				if (function == NULL)
 				{
 					if (format[i + 1] == ' ' && !format[i + 2])
-						BOBreturn (-1);
+						return (-1);
 					handl_buf(buffer, format[i], ibuf), len++, i--;
 				}
 				else
